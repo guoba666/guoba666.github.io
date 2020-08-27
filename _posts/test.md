@@ -1,5 +1,5 @@
 ---
-title: test
+title: 2020-08-09-test.md
 tags: vuejs
 renderNumberedHeading: true
 grammar_cjkRuby: true
