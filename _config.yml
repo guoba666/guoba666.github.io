@@ -20,7 +20,7 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'protocol://domain'
 
-author: your_full_name                  # change to your full name
+author: guoba666                  # change to your full name
 
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
@@ -85,7 +85,7 @@ toc: true
 
 paginate: 10
 
-markdown: kramdown
+markdown: markdown
 
 highlighter: rouge
 
