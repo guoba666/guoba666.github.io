@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+	
+</style>
+<body>
+    <center>
+        <ul>
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="p1.html">购物</a>
+            </li>
+            <li>
+                <a href="p2.html">个人中心</a>
+            </li>
+            <li>
+                <a href="community.html">留言区</a>
+            </li>
+        </ul>
+    </center>   
+    
+    <center>
+        <div class="displayArea" id="displayArea">
+			<div class="comment-box">
+				<div class="comment-head">
+					<span class="comment-autor">锅巴</span>
+					<a class="del" title="删除"></a>
+				</div>
+				<div class="comment-content">
+					ABCDEFGASDLKQWEQSAD
+				</div>
+			</div>
+        </div> 
+    </center>
+    
+    <center>
+        <div id="nameDiv">
+            <label for="name" id="nameLabel">昵称:</label>
+            <input id="name" type="text"/><span id="nameInfo"></span>
+        </div>
+        <div id="contentDiv">        
+            <label for="content" id="contentLabel">留言内容:</label>
+            <textarea id="content"></textarea><span id="contentInfo"></span>
+            <button id="send-btn">
+				<div class="bt-text">发送</div>
+				<div class="loader"></div>
+			</button>
+        </div>
+    </center>
+</body>
+
+</html>

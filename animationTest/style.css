@@ -1,0 +1,191 @@
+body{
+    background-color: #333;
+}
+p{
+    color:white;
+}
+ul{
+    list-style: none;
+    font-size: 35px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    margin:0px 20px;
+    
+}
+ul a{
+    text-decoration: none;
+    color:white;
+}
+ul a:hover{
+    color:skyblue;
+}
+.selected{
+    color:#FFFF00 !important;
+}
+#nameDiv{
+    width:100%;
+    position: fixed;
+    bottom: 150px;
+    margin-left:-212px;
+	margin-bottom:-8px;
+}
+#nameDiv label{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: top;
+}
+#nameDiv input{
+   height:25px;
+   font-size: 18px;
+   font-weight: bold;
+   background-color:#fff;
+   color:black;
+   outline: none;
+   border-radius: 12px;
+}
+#contentDiv{
+    width:100%;
+    position: fixed;
+    bottom:0px;
+	left:56px;
+}
+#contentDiv label{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: top;
+}
+#contentDiv textarea{
+	background-color:white;
+    width:600px;
+    height:130px;
+    font-size: 18px;
+    font-weight: bold;
+	color:black;
+	outline: none;
+	border-radius: 12px;
+}
+
+#send-btn {
+	cursor: pointer;
+	outline: none;/*去除点击按钮后有个蓝色边框*/
+	border: 2px solid #fff;
+	color: white;
+	border-radius: 50px;
+	padding: 15px 80px;
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+	vertical-align: bottom;
+	transform:translateY(-40px);
+}
+#send-btn:hover{
+	color:deepskyblue;
+	border-color: deepskyblue;
+}
+#send-btn .bt-text.active{
+	transform: translateY(-350%);
+	transition: 0.35s cubic-bezier(0.34, -0.61, 1, 0.64);
+}
+#send-btn.active{
+	padding: 0px 80px;
+	transition: 0.4s cubic-bezier(0.35, -0.77, 0.67, 1.88);
+}
+#send-btn .loader{
+	position: absolute;
+	width:0px;
+	height: calc(100% - 4px);
+	background-color: #fff;
+	top:2px;
+	left:2px;
+	border-radius: 50px;
+}
+#send-btn .loader.active{
+	width: calc(100% - 4px);
+	transition: 0.8s ease-in-out;
+}
+@keyframes delContent{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+		transform:translateY(0);
+	}
+    40%{
+		transform:translateY(-10px);
+	}
+    60%{
+		transform:translateY(-5px);
+	}
+}
+.comment-box{
+	position: relative;
+	width:600px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	margin-top:10px;
+}
+.comment-box:hover{
+	animation: bounce 0.5s;
+}
+.comment-box.delState{
+	opacity: 0;
+	transition:opacity 0.8s;
+}
+.comment-box .comment-head{
+	background: #FCFCFC;
+	border-bottom: 1px solid #E5E5E5;
+	border-radius: 4px 4px 0 0;
+	padding:5px;
+	color: #03658c;
+	font-weight: bold;
+	text-align: left;
+}
+.comment-box .comment-autor{
+	padding-left:8px;
+}
+.comment-box .comment-content{
+	background:#FFF;
+	color:#595959;
+	text-align: left;
+	padding: 10px;
+}
+.comment-box:after{
+	content:'';
+    position: absolute;
+    display: block;
+    border-width: 10px 12px 10px 0px;
+    border-style: solid;
+    border-color: transparent #FCFCFC;
+    top: 8px;
+    left:-11px;
+}
+.del{
+	position: absolute;
+	right:10px;
+	top:15px;
+	cursor: pointer;
+	display:inline-block;
+	width:20px;
+	height:5px;
+	line-height: 0;
+	font-size: 0;
+	vertical-align: middle;
+	transform: rotate(45deg);
+	background-color:red;
+}
+.del:after{
+	content:'';
+	background: red;
+	display:inline-block;
+	width: 20px;
+	height:5px; 
+	transform: rotate(-90deg);
+}
