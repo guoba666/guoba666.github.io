@@ -28,6 +28,9 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 }
 
 .post-content {
+  h1,h2,h3,h4,h5,h6{
+	font-weight:bold;
+  }
   img {
     max-width: 100%;
     margin-top: .5rem;
